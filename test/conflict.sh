@@ -38,5 +38,3 @@ then
   echo "Bad service price"
   exit 1
 fi
-
-

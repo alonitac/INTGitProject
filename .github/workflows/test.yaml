@@ -11,7 +11,7 @@ jobs:
       - name: Check version
         run : |
           sudo apt-get update && sudo apt-get install jq
-          
+
           release_version=${GITHUB_REF#*release-}
           if [ "$(cat version.json | jq -r '.version')" != "$release_version" ]
           then

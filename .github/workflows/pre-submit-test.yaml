@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone
-        run: | 
+        run: |
           git clone https://github.com/${{ github.event.pull_request.head.repo.full_name }} tmprepo
       - name: test branches question
         run: |
@@ -36,5 +36,3 @@ jobs:
           git checkout main
           cd test
           bash merge_repos.sh
-          
-          
